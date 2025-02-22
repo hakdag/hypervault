@@ -6,9 +6,9 @@
 
 <br />
 
-<h3 align="center">HyperVault – Next-Gen Core Banking System</h3>
+<h3 align="left">HyperVault – Next-Gen Core Banking System</h3>
 
-  <p align="center">
+  <p align="left">
 HyperVault is a modern, high-performance Core Banking System (CBS) designed for speed, security, and scalability. Built for banks, fintechs, and financial institutions, it provides a cloud-native, blockchain-supported, and API-driven infrastructure to power seamless banking operations.
 <br />
 HyperVault is the future of banking infrastructure, delivering next-generation financial services with unparalleled speed, security, and flexibility.
@@ -18,12 +18,12 @@ HyperVault is the future of banking infrastructure, delivering next-generation f
 
 ## Key Features:
 
-✅ Ultra-Fast Transactions – Real-time processing with low latency.
-✅ Next-Gen Security – Advanced encryption, multi-factor authentication, and blockchain-integrated security.
-✅ Cloud-Ready & Scalable – Deployable on-premises or in the cloud with high availability.
-✅ Comprehensive Account & Ledger Management – Supports multiple account types, real-time balance updates, and automated reconciliation.
-✅ Smart API Architecture – Open Banking-ready with RESTful APIs for seamless integrations.
-✅ AI & Automation-Driven – Intelligent fraud detection and automated workflows.
+✅ Ultra-Fast Transactions – Real-time processing with low latency.<br />
+✅ Next-Gen Security – Advanced encryption, multi-factor authentication, and blockchain-integrated security.<br />
+✅ Cloud-Ready & Scalable – Deployable on-premises or in the cloud with high availability.<br />
+✅ Comprehensive Account & Ledger Management – Supports multiple account types, real-time balance updates, and automated reconciliation.<br />
+✅ Smart API Architecture – Open Banking-ready with RESTful APIs for seamless integrations.<br />
+✅ AI & Automation-Driven – Intelligent fraud detection and automated workflows.<br />
 ✅ Regulatory Compliance – Built-in audit logging, KYC/AML support, and reporting tools.
 
 
@@ -33,9 +33,7 @@ HyperVault is the future of banking infrastructure, delivering next-generation f
 
 
 <!-- LICENSE -->
-## License
 
-Distributed under the GPL-3.0 License. See `LICENSE.txt` for more information.
 
 <!-- MARKDOWN LINKS & IMAGES -->
 [contributors-shield]: https://img.shields.io/github/contributors/hakdag/peersend.svg?style=for-the-badge
