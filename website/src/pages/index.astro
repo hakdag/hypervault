@@ -1,0 +1,178 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Feature from '../components/Feature.astro';
+
+const features = [
+  {
+    title: "Ultra-Fast Transactions",
+    description: "Experience real-time processing with minimal latency, ensuring your banking operations run at peak efficiency.",
+    icon: "⚡"
+  },
+  {
+    title: "Next-Gen Security",
+    description: "Advanced encryption, multi-factor authentication, and blockchain-integrated security to protect your assets.",
+    icon: "🔒"
+  },
+  {
+    title: "Cloud-Ready & Scalable",
+    description: "Deploy on-premises or in the cloud with guaranteed high availability and seamless scaling capabilities.",
+    icon: "☁️"
+  },
+  {
+    title: "Comprehensive Account Management",
+    description: "Support for multiple account types, real-time balance updates, and automated reconciliation processes.",
+    icon: "📊"
+  },
+  {
+    title: "Smart API Architecture",
+    description: "Open Banking-ready with RESTful APIs enabling seamless integration with your existing systems.",
+    icon: "🔌"
+  },
+  {
+    title: "AI & Automation-Driven",
+    description: "Intelligent fraud detection and automated workflows powered by cutting-edge AI technology.",
+    icon: "🤖"
+  },
+  {
+    title: "Regulatory Compliance",
+    description: "Built-in audit logging, KYC/AML support, and comprehensive reporting tools for full compliance.",
+    icon: "✅"
+  }
+];
+---
+
+<Layout 
+  title="HyperVault - Next-Generation Core Banking System"
+  description="Transform your banking operations with HyperVault's ultra-fast, secure, and scalable core banking system. Features include real-time processing, advanced security, and comprehensive account management."
+>
+  <main class="overflow-hidden">
+    <!-- Hero Section -->
+    <section class="bg-primary relative min-h-screen flex items-center">
+      <div class="absolute inset-0 bg-gradient-radial from-purple-dark/20 via-primary to-primary"></div>
+      <div class="absolute inset-0 bg-[url('/logo.png')] opacity-5 bg-repeat bg-[length:105px_105px]"></div>
+      <div class="container mx-auto px-6 py-24 relative z-10">
+        <div class="flex flex-col md:flex-row items-center gap-12">
+          <div class="md:w-1/2">
+            <div class="mb-8">
+              <img 
+                src="/logo.png" 
+                alt="HyperVault Logo" 
+                class="sh-auto"
+              />
+            </div>
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-purple-light via-purple to-accent">
+              Secure Banking<br/>
+              For The Digital Age
+            </h1>
+            <p class="text-xl mb-8 text-gray-300">
+              Transform your banking operations with our next-generation core banking system, built for security and scalability.
+            </p>
+            <div class="flex flex-wrap gap-4">
+              <a href="#features" 
+                class="bg-gradient-to-r from-purple to-accent text-white px-8 py-4 rounded-lg font-semibold hover:opacity-90 transition-opacity inline-flex items-center gap-2">
+                Explore Features
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                </svg>
+              </a>
+              <a href="#contact" 
+                class="border-2 border-purple text-purple hover:bg-purple hover:text-white px-8 py-4 rounded-lg font-semibold transition-colors inline-block">
+                Contact Us
+              </a>
+            </div>
+          </div>
+          <div class="md:w-1/2 relative">
+            <div class="absolute inset-0 bg-gradient-radial from-purple/20 to-transparent"></div>
+            <div class="p-8 bg-gray-900/50 backdrop-blur-xl rounded-2xl border border-purple/20">
+              <h3 class="text-2xl font-semibold text-white mb-4">Enterprise-Grade Security</h3>
+              <ul class="space-y-3 text-gray-300">
+                <li class="flex items-center gap-3">
+                  <span class="text-purple">✓</span>
+                  Advanced Encryption
+                </li>
+                <li class="flex items-center gap-3">
+                  <span class="text-purple">✓</span>
+                  Multi-Factor Authentication
+                </li>
+                <li class="flex items-center gap-3">
+                  <span class="text-purple">✓</span>
+                  Blockchain Integration
+                </li>
+                <li class="flex items-center gap-3">
+                  <span class="text-purple">✓</span>
+                  Real-time Threat Detection
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-24 bg-gray-900">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-purple-light to-purple">
+            Powerful Features
+          </h2>
+          <p class="text-xl text-gray-400 max-w-3xl mx-auto">
+            Experience the future of banking with our comprehensive suite of features designed for modern financial institutions.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {features.map(feature => (
+            <Feature
+              title={feature.title}
+              description={feature.description}
+              icon={feature.icon}
+            />
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 bg-primary relative">
+      <div class="absolute inset-0 bg-gradient-radial from-purple-dark/20 via-primary to-primary"></div>
+      <div class="container mx-auto px-6 relative z-10">
+        <div class="max-w-2xl mx-auto text-center">
+          <h2 class="text-4xl font-bold mb-8 bg-clip-text text-transparent bg-gradient-to-r from-purple-light to-purple">
+            Ready to Transform Your Banking?
+          </h2>
+          <p class="text-xl text-gray-300 mb-8">
+            Contact our team to schedule a demo and discover how HyperVault can revolutionize your banking operations.
+          </p>
+          <a
+            href="mailto:akdag.hakan@hotmail.com"
+            class="bg-gradient-to-r from-purple to-accent text-white px-8 py-4 rounded-lg font-semibold hover:opacity-90 transition-opacity inline-flex items-center gap-2"
+          >
+            Contact Us
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+              <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+              <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12 border-t border-purple/20">
+      <div class="container mx-auto px-6">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+          <div class="mb-6 md:mb-0">
+            <img 
+              src="/logo.png" 
+              alt="HyperVault Logo" 
+              class="w-40 h-auto" 
+            />
+          </div>
+          <div class="text-center md:text-right text-gray-400">
+            <p>&copy; 2025 HyperVault. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </main>
+</Layout>
